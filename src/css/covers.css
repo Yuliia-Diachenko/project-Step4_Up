@@ -47,7 +47,7 @@
 /* MOBILE STYLES*/
 @media (max-width: 767px) {
   .covers-section {
-    padding-top: 32px;
+    padding-top: 64px;
     padding-bottom: 32px;
   }
 
@@ -63,7 +63,7 @@
   @media screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px),
     screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-    .covers-section {
+    .covers-wrapper {
       background-image: linear-gradient(var(--covers-bgr), var(--covers-bgr)),
         url('/img/mobile/Covers-m@2x.png');
     }
@@ -84,7 +84,7 @@
 /* TABLET STYLES*/
 @media screen and (min-width: 768px) {
   .covers-section {
-    padding-top: 48px;
+    padding-top: 96px;
     padding-bottom: 48px;
   }
 
@@ -100,7 +100,7 @@
   @media screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .covers-section {
+    .covers-wrapper {
       background-image: linear-gradient(var(--covers-bgr), var(--covers-bgr)),
         url('/img/tablet/Covers-tbl@2x.png');
     }
@@ -121,7 +121,7 @@
 /* DESKTOP STYLES*/
 @media screen and (min-width: 1440px) {
   .covers-section {
-    padding-top: 82px;
+    padding-top: 164px;
     padding-bottom: 82px;
   }
 
@@ -133,7 +133,7 @@
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
     screen and (min-resolution: 2dppx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-    .covers-section {
+    .covers-wrapper {
       background-image: linear-gradient(var(--covers-bgr), var(--covers-bgr)),
         url('/img/desktop/Covers-dsk@2x.png');
       background-size: cover;
