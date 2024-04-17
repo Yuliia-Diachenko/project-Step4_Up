@@ -158,6 +158,10 @@
     transition: opacity 0.3s;
 }
 
+.projects-swiper-slide:not(:first-child){
+    display: none;
+}
+
 .projects-swiper-slide.swiper-slide-active {
     opacity: 1; 
 }
