@@ -63,11 +63,13 @@ buttonEl.addEventListener('click', () => {
   swiperAbout.slideNext();
 });
 
-document.addEventListener('keydown', function (event) {
+buttonEl.addEventListener('keydown', function (event) {
   event.preventDefault();
   if (event.key === 'Tab') {
     swiperAbout.slideNext();
-  } else {
-    swiperAbout.slidePrev();
   }
+  // else {
+  //   swiperAbout.slidePrev();
+    // }
+    
 });

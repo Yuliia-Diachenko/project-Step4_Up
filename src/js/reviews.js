@@ -23,7 +23,7 @@ function renderReviews(reviews) {
   reviewsGallery.insertAdjacentHTML('beforeend', markup);
 }
 
-
+// const sectionRewviews = document.querySelector('.section-reviews');
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     const reviews = await getReviews();
