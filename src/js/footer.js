@@ -105,7 +105,7 @@ function handleSubmit(event) {
   try {
     if (validEmail === true && comments != '') {
       //=========================симуляція помилки від сервера
-       throw postRequest(options)
+      //  throw postRequest(options)
       // ===============================
       postRequest(options);
       //  console.log(postRequest(options));
