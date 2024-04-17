@@ -1,56 +1,262 @@
-<section class="hero-section">
-  <div class="hero-container">
-    <h1 class="hero-title">
-      Hello. <br />I’m Fullstack developer <br />Lloyd Jefferson.
-    </h1>
+.circle-link {
+  width: 37px;
 
-    <ul class="hero-social-list">
-      <li class="hero-social-item">
-        <a
-          class="hero-social-link"
-          href="https://www.instagram.com/goitclub/"
-          target="_blank"
-          ><div class="circle-link">IG</div>
-        </a>
-      </li>
+  height: 37px;
 
-      <li class="hero-social-item">
-        <a
-          class="hero-social-link"
-          href="https://www.facebook.com/goITclub/"
-          target="_blank"
-        >
-          <div class="circle-link">FB</div>
-        </a>
-      </li>
+  border: 1px solid var(--text-grey-benefits);
+  color: var(--main-text);
 
-      <li class="hero-social-item">
-        <a
-          class="hero-social-link"
-          href="https://www.youtube.com/c/GoIT"
-          target="_blank"
-          ><div class="circle-link">YT</div></a
-        >
-      </li>
+  border-radius: 60px;
 
-      <li class="hero-social-item">
-        <a
-          class="hero-social-link"
-          href="https://github.com/Yuliia-Diachenko/project-Step2_Up"
-          target="_blank"
-          ><div class="circle-link">GH</div></a
-        >
-      </li>
+  display: flex;
 
-      <li class="hero-social-item email-item">
-        <a
-          class="hero-social-link email-link"
-          href="mailto:lloydjefferson@gmail.com"
-          ><div class="circle-link email-circle-link">
-            lloydjefferson@gmail.com
-          </div></a
-        >
-      </li>
-    </ul>
-  </div>
-</section>
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 14px;
+
+  line-height: 0.8;
+
+  letter-spacing: -0.02em;
+
+  text-transform: uppercase;
+}
+
+.email-circle-link {
+  width: 191px;
+}
+
+.hero-social-list {
+  display: flex;
+  flex-shrink: 2;
+  gap: 4px;
+
+  margin-bottom: 32px;
+
+  justify-content: right;
+
+  flex-wrap: wrap;
+}
+
+.email-circle-link {
+  max-width: 178px;
+
+  padding: 10px 12px 10px 12px;
+
+  text-align: center;
+
+  border-radius: 60px;
+
+  text-transform: lowercase;
+}
+
+.hero-section {
+  height: 812px;
+
+  background-image: url('/img/mobile/background-hero-m.png');
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 32px;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url('/img/mobile/background-hero-m@2x.png');
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+.hero-title {
+  font-size: 50px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 0.03em;
+
+  text-align: left;
+
+  margin-bottom: 162px;
+
+  margin-top: 281px;
+
+  max-width: 342px;
+
+  text-transform: uppercase;
+  color: var(--main-text);
+}
+
+/* ================================================================================= */
+
+@media screen and (max-width: 374px) {
+  .hero-social-list {
+    justify-content: center;
+    gap: 10px;
+  }
+  body {
+    height: 100%;
+  }
+
+  .hero-container {
+    min-height: 100%;
+    align-content: space-between;
+    padding-bottom: 32px;
+  }
+  .hero-social-list {
+    align-items: flex-end;
+  }
+  .hero-title {
+    margin-top: 250px;
+    margin-bottom: 0;
+    font-size: calc(40px + (40 - 30) * ((100vw - 320px) / (374 - 320)));
+    max-width: 325px;
+    display: block;
+    flex: 1 1 auto;
+  }
+  .circle-link:not(.email-circle-link) {
+    width: calc(50px + (50 - 37) * ((100vw - 320px) / (374 - 320)));
+    height: calc(50px + (50 - 37) * ((100vw - 320px) / (374 - 320)));
+    font-size: calc(20px + (20 - 10) * ((100vw - 320px) / (374 - 320)));
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media screen and (min-width: 768px) {
+  /* .hero-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 736px;
+    padding-left: 32px;
+    padding-right: 32px;
+  } */
+  .hero-title {
+    font-size: 90px;
+
+    margin-bottom: 187px;
+
+    margin-top: 300px;
+
+    max-width: 632px;
+
+    height: 450px;
+
+    letter-spacing: -0.03em;
+
+    line-height: 1;
+  }
+
+  .circle-link {
+    font-size: 16px;
+  }
+
+  .hero-container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+  }
+
+  .circle-link {
+    width: 55px;
+
+    height: 55px;
+  }
+
+  .circle-link:not(.email-circle-link) {
+    width: 55px;
+
+    height: 55px;
+  }
+
+  .email-circle-link {
+    width: 223px;
+
+    height: 56px;
+  }
+
+  .circle-link.email-circle-link {
+    padding: 18px 24px 18px 24px;
+  }
+
+  .hero-social-link.email-link,
+  .circle-link.email-circle-link {
+    max-width: 239px;
+  }
+
+  .hero-social-list {
+    gap: 8px;
+  }
+
+  .hero-section {
+    height: 1024px;
+
+    background-image: url('/img/tablet/background-hero-tbl.png');
+    margin-bottom: 32px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: url('/img/tablet/background-hero-tbl@2x.png');
+    }
+  }
+}
+
+/* =============================================================== */
+
+@media screen and (min-width: 1440px) {
+  /* .hero-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding-left: 32px;
+    padding-right: 32px;
+  } */
+
+  .hero-container {
+    max-width: 1440px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .hero-title {
+    margin-left: 146px;
+
+    margin-bottom: 243px;
+
+    max-width: 1084px;
+
+    height: 270px;
+
+    margin-top: 300px;
+  }
+
+  .hero-section {
+    height: 900px;
+
+    background-image: url('/img/desktop/background-hero.png');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: url('/img/desktop/background-hero@2x.png');
+      margin-bottom: 48px;
+    }
+
+  }
+}
