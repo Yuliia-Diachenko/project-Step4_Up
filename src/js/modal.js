@@ -22,7 +22,6 @@ const modalWindowCloseEsc = document.addEventListener("keydown", event => {
 // close modal click backdrop
 const modalWindowCloseBackDrop = modalWindow.addEventListener("click",event => {
     const clickedElement = event.target;
-    console.log(clickedElement);
     if (clickedElement !== modalWindow) {
         return;
 }

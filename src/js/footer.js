@@ -1,3 +1,4 @@
+
 import { postRequest } from './api';
 import iziToast from 'izitoast';
 import { addClassIsOpenModal } from './modal';
@@ -125,3 +126,4 @@ function handleSubmit(event) {
   }
   removeMessage(emailInput);
 }
+
