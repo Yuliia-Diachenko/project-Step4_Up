@@ -1,5 +1,5 @@
 import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+// import 'accordion-js/dist/accordion.min.css';
 
 import Swiper from 'swiper';
 import 'swiper/css';
@@ -15,15 +15,14 @@ const accordion = new Accordion(accordeonList, {
 });
 
 const accordionItems = document.querySelectorAll('.accordeon-title');
+const description = document.querySelector('.ac');
 
 accordionItems.forEach(item => {
   item.addEventListener('click', function () {
     const arrow = item.querySelector('.title-icon');
     const description = item.nextElementSibling;
 
-    console.log(description);
-
-    arrow.classList.toggle('is-active');
+    arrow.classList.toggle('active');
     description.classList.toggle('visually-hidden');
   });
 });
@@ -31,6 +30,7 @@ accordionItems.forEach(item => {
 // ============SWIPER=================
 
 const buttonEl = document.querySelector('.swiper-next');
+const swiperEl = document.querySelector('.about-me-swiper-container');
 
 const swiperAbout = new Swiper('.about-me-skills', {
   modules: [Keyboard, Mousewheel],
@@ -63,7 +63,7 @@ buttonEl.addEventListener('click', () => {
   swiperAbout.slideNext();
 });
 
-document.addEventListener('keydown', function (event) {
+swiperEl.addEventListener('keydown', function (event) {
   event.preventDefault();
   if (event.key === 'Tab') {
     swiperAbout.slideNext();
@@ -71,3 +71,13 @@ document.addEventListener('keydown', function (event) {
     swiperAbout.slidePrev();
   }
 });
+
+// ============NEW ACCORDEON==========
+
+// const accordeonList = document.querySelector('.accordion-container');
+
+// new Accordion(accordeonList, {
+//   duration: 600,
+//   showMultiple: true,
+//   openOnInit: [0],
+// });
