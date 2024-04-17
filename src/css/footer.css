@@ -41,7 +41,7 @@
   background-color: transparent;
   outline: none;
   color: var(--text-grey-all);
-  width: 273px;
+  max-width: 290px;
   border: none;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--text-grey-benefits);
@@ -87,15 +87,15 @@
 label.success-label {
   font-size: 14px;
   padding-top: 4px;
-  color: var(--green); 
-  }
+  color: var(--green);
+}
 .email.success-label {
   border-bottom: 1px solid var(--green);
 }
 label.error-label {
   font-size: 14px;
   padding-top: 4px;
-  color: var(--red); 
+  color: var(--red);
 }
 .email.error-label {
   border-bottom: 1px solid var(--red);
@@ -154,8 +154,9 @@ label.error-label {
   }
   .footer-form-order {
     justify-content: space-between;
+    font-weight: 500;
   }
   .footer-input {
-    width: 390px;
+    max-width: 390px;
   }
 }
