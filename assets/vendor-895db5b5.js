@@ -4,4 +4,4 @@ It can be › `+g);return}n||window.innerWidth<=l?m.position=="bottomLeft"||m.po
         rotateZ(${g.rotate?a?-M:M:0}deg)
         scale(${P})
       `;if(g.slideShadows){let L=d.querySelector(".swiper-slide-shadow");L||(L=oe("cards",d)),L&&(L.style.opacity=Math.min(Math.max((Math.abs(y)-.5)/.5,0),1))}d.style.zIndex=-Math.abs(Math.round(h))+p.length;const T=he(g,d);T.style.transform=S}},setTransition:p=>{const u=e.slides.map(a=>ne(a));u.forEach(a=>{a.style.transitionDuration=`${p}ms`,a.querySelectorAll(".swiper-slide-shadow").forEach(g=>{g.style.transitionDuration=`${p}ms`})}),xe({swiper:e,duration:p,transformElements:u})},perspective:()=>!0,overwriteParams:()=>({watchSlidesProgress:!0,virtualTranslate:!e.params.cssMode})})}const Ki=[Si,xi,Ti,Mi,Ci,Li,Ii,Pi,Ai,zi,Oi,Di,$i,ki,Hi,Ni,qi,Vi,Yi,Wi,_i,ji,Ui];K.use(Ki);export{Zi as A,xi as K,Ti as M,K as S};
-//# sourceMappingURL=vendor-1267bea4.js.map
+//# sourceMappingURL=vendor-895db5b5.js.map
