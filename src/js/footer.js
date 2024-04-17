@@ -27,14 +27,16 @@ function validate(input) {
     input.classList.remove('error-label');
     input.classList.add('success-label');
     addMessage(input, 'Success!', 'success');
+    if(labelError){
     labelError.classList.remove('error-label');
-    labelError.classList.add('success-label');
+    labelError.classList.add('success-label');}
   } else {
     input.classList.remove('success-label');
     input.classList.add('error-label');
     addMessage(input, 'Invalid email, try again', 'error');
+    if(labelError){
     labelError.classList.remove('success-label');
-    labelError.classList.add('error-label');
+    labelError.classList.add('error-label');}
   }
 }
 // Створення нового елемента для відображення повідомлення

@@ -2,10 +2,14 @@
   background-color: var(--background);
   color: var(--main-text);
 }
-.footer-container {
+.footer-container-section {
   max-width: 375px;
   margin: 0 auto;
   padding: 64px 16px 32px 16px;
+}
+.footer-container{
+  max-width: 290px;
+  margin: 0 auto;
 }
 .footer-logo {
   border-radius: 12px;
@@ -41,7 +45,7 @@
   background-color: transparent;
   outline: none;
   color: var(--text-grey-all);
-  max-width: 290px;
+  width: 288px;
   border: none;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--text-grey-benefits);
@@ -101,9 +105,12 @@ label.error-label {
   border-bottom: 1px solid var(--red);
 }
 @media screen and (min-width: 768px) {
-  .footer-container {
+  .footer-container-section {
     max-width: 768px;
     padding: 128px 32px 169px 32px;
+  }
+  .footer-container{
+    max-width: 704px;
   }
   .footer-logo {
     width: 70px;
@@ -129,7 +136,7 @@ label.error-label {
     height: 66px;
   }
   .footer-input {
-    max-width: 245px;
+    width: 245px;
   }
   .footer-button-submit {
     width: 150px;
@@ -148,15 +155,18 @@ label.error-label {
 }
 
 @media screen and (min-width: 1440px) {
-  .footer-container {
+  .footer-container-section {
     max-width: 1440px;
     padding: 162px 196px 169px 196px;
+  }
+  .footer-container{
+    max-width: 1048px;
   }
   .footer-form-order {
     justify-content: space-between;
     font-weight: 500;
   }
   .footer-input {
-    max-width: 390px;
+    width: 390px;
   }
 }
