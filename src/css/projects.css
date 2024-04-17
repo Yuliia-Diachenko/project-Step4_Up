@@ -153,7 +153,7 @@
 }    
 
 .projects-swiper-slide.swiper-slide {
-    opacity: 0; 
+    /* opacity: 0;  */
     transition: opacity 0.3s;
 }
 
@@ -220,7 +220,7 @@
 
        /* desktop */
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px){    
 
 .projects-container{
     max-width: 1376px;
