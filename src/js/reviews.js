@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     1440: {
       slidesPerView: 4,
     },
-  },
+      },
   navigation: {
     nextEl: ".section-reviews .swiper-button-next",
     prevEl: ".section-reviews .swiper-button-prev",
