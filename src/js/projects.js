@@ -35,6 +35,7 @@ const swiper = new Swiper('.projects-block-slider.swiper-container', {
         document.querySelector('.projects-button-slider-prev.swiper-button-prev svg use')
         .setAttribute('href', './img/symbol-defs.svg#icon-arrow-right-white');
 
+
         var prevButton = document.querySelector('.projects-button-slider-prev');
         var nextButton = document.querySelector('.projects-button-slider-next');
         prevButton.style.borderColor = 'white';
