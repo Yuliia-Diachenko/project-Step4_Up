@@ -1,0 +1,112 @@
+.container-benefits-section {
+  display: flex;
+  justify-content: center;
+}
+.container-benefits {
+  max-width: 375px;
+  margin: 0 16px;
+  padding: 32px 0;
+}
+.section-name {
+  margin-bottom: 32px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--text-grey-webs);
+}
+
+.container-benefits-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.benefits-list {
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 344px;
+  height: 270px;
+  background: #242527;
+}
+
+.container-benefits-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64px;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  background: var(--coral-button);
+}
+
+.benefits-name {
+  margin-bottom: 8px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+}
+
+.benefits-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--text-grey-all);
+}
+
+.order {
+  border: 1px solid var(--text-grey-benefits);
+  border-radius: 60px;
+  width: 187px;
+  height: 55px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  background-color: var(--background);
+  margin-top: 32px;
+}
+.order:hover,
+.order:focus {
+  border: 1px solid var(--text-grey-webs);
+}
+
+/* =============TABLET====================== */
+@media screen and (min-width: 768px) {
+  .container-benefits {
+    max-width: 736px;
+    margin: 0 32px;
+    padding: 48px 0;
+  }
+  .order {
+    margin-top: 64px;
+  }
+}
+
+/* ===================DESKTOP 1440===================== */
+@media screen and (min-width: 1440px) {
+  .container-benefits {
+    max-width: 1376px;
+    margin: 0 32px;
+    padding: 82px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 412px;
+  }
+  .section-name {
+    width: 284px;
+  }
+  .container-benefits-block {
+    width: 770px;
+  }
+}

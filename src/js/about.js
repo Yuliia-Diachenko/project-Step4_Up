@@ -1,3 +1,4 @@
+
 import Accordion from 'accordion-js';
 // import 'accordion-js/dist/accordion.min.css';
 
@@ -15,19 +16,15 @@ const accordion = new Accordion(accordeonList, {
 });
 
 const accordionItems = document.querySelectorAll('.accordeon-title');
-const description = document.querySelector('.ac');
 
 accordionItems.forEach(item => {
   item.addEventListener('click', function () {
     const arrow = item.querySelector('.title-icon');
     const description = item.nextElementSibling;
-
-    arrow.classList.toggle('active');
-    description.classList.toggle('visually-hidden');
+    arrow.classList.toggle('active-is');
+    description.classList.toggle('hidden');
   });
 });
-
-// ============SWIPER=================
 
 const buttonEl = document.querySelector('.swiper-next');
 const swiperEl = document.querySelector('.about-me-swiper-container');
@@ -72,12 +69,3 @@ swiperEl.addEventListener('keydown', function (event) {
   }
 });
 
-// ============NEW ACCORDEON==========
-
-// const accordeonList = document.querySelector('.accordion-container');
-
-// new Accordion(accordeonList, {
-//   duration: 600,
-//   showMultiple: true,
-//   openOnInit: [0],
-// });

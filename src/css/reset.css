@@ -42,20 +42,33 @@ body {
 /* ------------- theme  ------------ */
 .light-theme {
   --background-color:#827e7e;
+  --text-grey-webs: rgb(18, 16, 16);
+  --text-grey-all: white;
+  --bgr-card-prj:#a19c9c;
+  --main-text: rgb(20, 19, 19);
   color-scheme: light;
+  --background: var(--coral-button)
 }
 
-.theme {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  padding: 10px;
-  background-color: transparent;
-  border-radius: 50%;
-  cursor: pointer;
-  fill: var(--text-grey-webs);
+  .theme {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 60px;
+    border: none;
+    background-color: #a19c9c;
+    opacity: 0.5;
+    cursor: pointer;
+    fill: var(--text-grey-webs);  
+    font-size: 12px;
 }
-
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .theme {
+    display: none;
+  }
+}
 /* --------- theme  ------------ */
 .visually-hidden {
   position: absolute;

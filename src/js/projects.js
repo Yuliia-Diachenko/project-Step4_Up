@@ -1,6 +1,5 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css';
-import sprite from '../img/symbol-defs.svg';
 
 const swiper = new Swiper('.projects-block-slider.swiper-container', {      
     slidesPerView: 1,
