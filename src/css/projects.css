@@ -7,16 +7,6 @@
     padding-top: 32px;
 }
 
-@media screen and (min-width:320px) and (max-width:375px){
-
-.projects-container{
-    padding: 16px;
-    max-width: 320px;
-}
-}
-
-@media screen and (min-width:320px){
-
 .projects-container{
     max-width: 343px;
     display: flex;
@@ -155,7 +145,15 @@
     overflow: hidden;
     transition: opacity 0.3s;
 }
-} 
+
+
+@media screen and (min-width:320px) and (max-width:375px){
+
+.projects-container{
+    padding: 16px;
+    max-width: 320px;
+}
+}
 
         /* tablet */
 
