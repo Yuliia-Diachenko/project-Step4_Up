@@ -61,10 +61,15 @@
     border: 1px solid rgba(250, 250, 250, 0.20);
 }
 
-.active {
+.active-is {
     transform: rotate(180deg);
     transition: transform 250ms linear;
 
+}
+
+.hidden {
+    overflow: hidden;
+    opacity: 0;
 }
 
 .accordeon-list {
@@ -74,7 +79,6 @@
 }
 
 .accordeon-list>li {
-    padding-bottom: 32px;
     border-bottom: 1px solid rgba(250, 250, 250, 0.20);
 }
 
@@ -138,10 +142,6 @@
     background-color: var(--coral-button) !important;
     outline: transparent;
 }
-
-/* .swiper-list>li:last-child  {
-    background-color: var(--coral-button);
-} */
 
 .swiper-arrow {
     background-color: transparent;
