@@ -13,35 +13,10 @@ const swiper = new Swiper('.projects-block-slider.swiper-container', {
         onlyInViewport: true,
     },
     on: {
-        reachEnd: function () {
-            document.querySelector('.projects-button-slider-next.swiper-button-next svg use')
-            .setAttribute('href', `${sprite}#icon-arrow-narrow-right`);
-
-            var nextButton = document.querySelector('.projects-button-slider-next');
-            nextButton.style.borderColor = 'grey';
-        },
-        reachBeginning: function () {
-            document.querySelector('.projects-button-slider-prev.swiper-button-prev svg use')
-            .setAttribute('href', `${sprite}#icon-arrow-narrow-right`);
-
-            var prevButton = document.querySelector('.projects-button-slider-prev');
-            prevButton.style.borderColor = 'grey';
-        },
-        slideChange: function(){
-            if (!swiper.isBeginning && !swiper.isEnd) {
-
-                document.querySelector('.projects-button-slider-next.swiper-button-next svg use')
-                .setAttribute('href', `${sprite}#icon-arrow-right-white`);
-                document.querySelector('.projects-button-slider-prev.swiper-button-prev svg use')
-                .setAttribute('href', `${sprite}#icon-arrow-right-white`);
-
-                var prevButton = document.querySelector('.projects-button-slider-prev');
-                var nextButton = document.querySelector('.projects-button-slider-next');
-                prevButton.style.borderColor = 'white';
-                nextButton.style.borderColor = 'white';
-            }
+        init: function () {
+            updateButtonState(this);
         }
-    },
+        }
 });
 
 document.addEventListener('keydown', function(event) {
@@ -54,3 +29,20 @@ document.addEventListener('keydown', function(event) {
         }
     }
 });
+
+function updateButtonState(swiper) {
+    const prevBtn = document.querySelector('.projects-btn-slider .swiper-button-prev');
+    const nextBtn = document.querySelector('.projects-btn-slider .swiper-button-next');
+  
+    if (swiper.isBeginning) {
+      prevBtn.classList.add('disabled');
+    } else {
+      prevBtn.classList.remove('disabled');
+    }
+  
+    if (swiper.isEnd) {
+      nextBtn.classList.add('disabled');
+    } else {
+      nextBtn.classList.remove('disabled');
+    }
+  }

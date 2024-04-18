@@ -126,15 +126,8 @@
     background-color: transparent;
     margin: 0 auto;
     top: 50%;
-    gap: 12px;    
-}
-
-.projects-button-slider-prev{
-    border: 1px solid var(--modal-background);
-}
-
-.projects-button-slider-next{
-    border: 1px solid var(--main-text);
+    gap: 12px;  
+    border: 1px solid var(--main-text);  
 }
 
 .projects-button-slider-prev{
