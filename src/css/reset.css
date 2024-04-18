@@ -56,7 +56,10 @@ body {
     left: 10px;
     padding: 10px;
     background-color: transparent;
-    border-radius: 50%;
+    border-radius: 60px;
+    border: none;
+    background-color: #a19c9c;
+    opacity: 0.5;
     cursor: pointer;
     fill: var(--text-grey-webs);  
     font-size: 12px;
