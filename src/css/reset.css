@@ -52,7 +52,7 @@ body {
 
   .theme {
     position: fixed;
-    top: 10px;
+    top: 100px;
     left: 10px;
     padding: 10px;
     background-color: transparent;
@@ -61,15 +61,6 @@ body {
     fill: var(--text-grey-webs);  
     font-size: 12px;
 }
-@media screen and (max-width: 830px) {
-  .theme {
-    position: fixed;
-    top: 100px;
-    font-size: 12px;
-  }
-}
-
-
 
 /* --------- theme  ------------ */
 .visually-hidden {
