@@ -42,7 +42,7 @@ const swiper = new Swiper('.projects-block-slider.swiper-container', {
         nextButton.style.borderColor = 'white';
     }
     }
-},
+}
 });
 
 document.addEventListener('keydown', function(event) {
