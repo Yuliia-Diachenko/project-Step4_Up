@@ -5,8 +5,7 @@ let button = document.querySelector("button");
 
 button.addEventListener("click", () => {
   root.classList.toggle("light-theme");
-  console.log(button.textContent);
-  if (button.textContent === "SUN") {
+   if (button.textContent === "SUN") {
   button.textContent = "NIGHT";
   } else {
     button.textContent = "SUN";
