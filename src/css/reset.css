@@ -50,16 +50,26 @@ body {
   --background: var(--coral-button)
 }
 
-.theme {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  padding: 10px;
-  background-color: transparent;
-  border-radius: 50%;
-  cursor: pointer;
-  fill: var(--text-grey-webs);
+  .theme {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    fill: var(--text-grey-webs);  
+    font-size: 12px;
 }
+@media screen and (max-width: 830px) {
+  .theme {
+    position: fixed;
+    top: 100px;
+    font-size: 12px;
+  }
+}
+
+
 
 /* --------- theme  ------------ */
 .visually-hidden {
