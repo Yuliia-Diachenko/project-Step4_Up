@@ -13,7 +13,6 @@
     padding: 16px;
     max-width: 320px;
 }
-
 }
 
 @media screen and (min-width:320px){
@@ -126,7 +125,6 @@
     flex-direction: row;
     gap: 12px;
     width: 116px;
-    height: 52px;
     margin: 0 auto;
 }
 
@@ -153,19 +151,10 @@
     transform: rotate(-180deg);
 }    
 
-.projects-swiper-slide.swiper-slide {
-    /* opacity: 0;  */
+.projects-block-slider.swiper-container {
+    overflow: hidden;
     transition: opacity 0.3s;
 }
-
-.projects-swiper-slide:not(:first-child){
-    display: none;
-}
-
-.projects-swiper-slide.swiper-slide-active {
-    opacity: 1; 
-}
-
 } 
 
         /* tablet */
@@ -222,7 +211,6 @@
     width: 32px;
     height: 32px;
 } 
-    
 }
 
        /* desktop */
@@ -260,5 +248,4 @@
     width: 177px;
     height: 55px;
 }
-
 }
