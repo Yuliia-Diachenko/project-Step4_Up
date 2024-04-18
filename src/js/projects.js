@@ -15,14 +15,14 @@ const swiper = new Swiper('.projects-block-slider.swiper-container', {
     on: {
     reachEnd: function () {
         document.querySelector('.projects-button-slider-next.swiper-button-next svg use')
-        .setAttribute('href', './img/symbol-defs.svg#icon-arrow-narrow-right');
+        .setAttribute('href', '/img/symbol-defs.svg#icon-arrow-narrow-right');
 
         var nextButton = document.querySelector('.projects-button-slider-next');
         nextButton.style.borderColor = 'grey';
     },
     reachBeginning: function () {
         document.querySelector('.projects-button-slider-prev.swiper-button-prev svg use')
-        .setAttribute('href', './img/symbol-defs.svg#icon-arrow-narrow-right');
+        .setAttribute('href', '/img/symbol-defs.svg#icon-arrow-narrow-right');
 
         var prevButton = document.querySelector('.projects-button-slider-prev');
         prevButton.style.borderColor = 'grey';
@@ -31,9 +31,9 @@ const swiper = new Swiper('.projects-block-slider.swiper-container', {
     if (!swiper.isBeginning && !swiper.isEnd) {
 
         document.querySelector('.projects-button-slider-next.swiper-button-next svg use')
-        .setAttribute('href', './img/symbol-defs.svg#icon-arrow-right-white');
+        .setAttribute('href', '/img/symbol-defs.svg#icon-arrow-right-white');
         document.querySelector('.projects-button-slider-prev.swiper-button-prev svg use')
-        .setAttribute('href', './img/symbol-defs.svg#icon-arrow-right-white');
+        .setAttribute('href', '/img/symbol-defs.svg#icon-arrow-right-white');
 
 
         var prevButton = document.querySelector('.projects-button-slider-prev');
