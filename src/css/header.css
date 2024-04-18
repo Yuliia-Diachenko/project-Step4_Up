@@ -1,0 +1,257 @@
+.header {
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo-header {
+  width: 84px;
+  height: 19px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 367px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+.header--mobile {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.heder-img {
+  width: 80px;
+  height: 80px;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.header-btn {
+  display: none;
+  color: var(--text-grey-modal);
+  background: var(--coral-button);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 auto;
+  min-width: 164px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-scroll-mobile {
+  display: block;
+  padding-top: 10px;
+  margin-top: 282px;
+  margin-bottom: 64px;
+}
+
+.header-btn--mobile {
+  display: block;
+}
+
+.team-photo {
+  margin-right: 10px;
+}
+
+.title-menu {
+  display: none;
+  margin-right: 151px;
+  margin-left: 151px;
+}
+
+.mobile-menu-burger-btn,
+.mobile-menu-close-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  stroke: #111111;
+}
+
+.mobile-menu-close-btn {
+  border: none;
+  padding: 0;
+  line-height: 0;
+  stroke: #fff;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}
+
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin: auto;
+}
+.mobile-menu-wrapper {
+  visibility: hidden;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/mobile/background-hero-m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateX(100%);
+  transition: transform 250ms linear;
+  display: flex;
+}
+
+.tablet-menu {
+  text-align: center;
+}
+
+.tablet-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: transform 250ms linear;
+}
+
+.tablet-menu-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.mobile-menu-wrapper.is-open {
+  transform: translateX(0%);
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+}
+.tablet-menu-wrapper.is-open {
+  transform: translateX(0%);
+}
+
+.mobile-menu-link,
+.mobile-menu-item {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: auto;
+  padding-top: 300px;
+}
+
+.main-photo {
+  display: flex;
+}
+
+.photo-logo {
+  width: 80px;
+  height: 80px;
+}
+.header-btn--mobile {
+  margin-bottom: 62px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 300px;
+  overflow: hidden;
+}
+.menu-open {
+  display: inline-block;
+}
+
+.menu-close {
+  display: none;
+}
+
+.mobile-menu-burger-btn {
+  margin-left: 90px;
+}
+.title-menu {
+  cursor: pointer;
+}
+
+.title-menu:hover,
+.title-menu:focus,
+.mobile-menu-link:hover,
+.mobile-menu-link:focus,
+.tablet-menu-link:hover,
+.tablet-menu-link:focus {
+  color: var(--coral-button);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 736px;
+  }
+  .mobile-menu-close-btn,
+  .mobile-menu-burger-btn {
+    display: none;
+  }
+  .header-btn {
+    display: block;
+    padding-top: 10px;
+  }
+  .title-menu {
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .header-navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    max-width: 1440px;
+  }
+  .title-menu {
+    margin-right: 500px;
+    margin-left: 500px;
+  }
+  .tablet-menu {
+    margin-left: auto;
+  }
+}
+.tablet-menu-navigation {
+  padding-top: 100px;
+  text-align: center;
+}
+
+
