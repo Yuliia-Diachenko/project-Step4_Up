@@ -1,6 +1,4 @@
 import { getReviews } from './api';
-// import Swiper from 'swiper';
-// import 'swiper/swiper-bundle.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/css';
 
@@ -23,7 +21,6 @@ function renderReviews(reviews) {
   reviewsGallery.insertAdjacentHTML('beforeend', markup);
 }
 
-// const sectionRewviews = document.querySelector('.section-reviews');
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     const reviews = await getReviews();
@@ -51,7 +48,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   },
   mousewheel: true, 
   touchRatio: 1,
-  keyboard: { enabled: true },
   loop: false,
   on: {
     init: function () {
@@ -61,12 +57,29 @@ document.addEventListener('DOMContentLoaded', async () => {
       updateButtonState(this);
     },
   },
-});
-    } catch (error) {
+    });
+    
+    const prevBtn = document.querySelector('.section-reviews .swiper-button-prev');
+    const nextBtn = document.querySelector('.section-reviews .swiper-button-next');
+
+    prevBtn.addEventListener('keydown', function(event) {
+      if (event.key === 'Tab') {
+        event.preventDefault();
+        swiper.slidePrev(); 
+      }
+    });
+
+    nextBtn.addEventListener('keydown', function(event) {
+      if (event.key === 'Tab') {
+        event.preventDefault();
+        swiper.slideNext(); 
+      }
+    });
+
+  } catch (error) {
     console.error(error);
   }
 });
-
 
 
 function updateButtonState(swiper) {
@@ -84,8 +97,11 @@ function updateButtonState(swiper) {
   } else {
     nextBtn.classList.remove('disabled');
   }
-
 }
+
+
+
+
 
 
 
