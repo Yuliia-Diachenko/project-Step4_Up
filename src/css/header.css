@@ -22,6 +22,7 @@
   max-width: 367px;
   padding-left: 16px;
   padding-right: 16px;
+  margin: 0 auto;
 }
 
 .header--mobile {
@@ -197,7 +198,7 @@
 }
 
 .mobile-menu-burger-btn {
-  margin-left: 143px;
+  margin-left: 90px;
 }
 .title-menu {
   cursor: pointer;

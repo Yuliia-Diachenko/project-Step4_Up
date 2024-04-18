@@ -1,6 +1,9 @@
 .faq-section {
   max-width: 343px;
   margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 32px;
 }
 .faq-container {
   /* padding-left: 16px;
@@ -63,6 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: rotate(180deg);
 }
 
 .answer {
@@ -91,6 +95,7 @@
   .faq-section {
     max-width: 704px;
     margin: 0 auto;
+    padding-top: 48px;
   }
   .faq-container {
     /* padding-left: 32px;
@@ -122,6 +127,7 @@
   .faq-section {
     max-width: 1376px;
     margin: 0 auto;
+    padding-top: 82px;
   }
   .faq-card:nth-last-child(-n + 2) {
     border-bottom: 1px solid var(--text-grey-benefits);

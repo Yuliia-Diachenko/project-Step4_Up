@@ -35,6 +35,7 @@ const swiper = new Swiper('.projects-block-slider.swiper-container', {
                 document.querySelector('.projects-button-slider-prev.swiper-button-prev svg use')
                 .setAttribute('href', `${sprite}#icon-arrow-right-white`);
 
+
                 var prevButton = document.querySelector('.projects-button-slider-prev');
                 var nextButton = document.querySelector('.projects-button-slider-next');
                 prevButton.style.borderColor = 'white';
@@ -42,6 +43,15 @@ const swiper = new Swiper('.projects-block-slider.swiper-container', {
             }
         }
     },
+
+        var prevButton = document.querySelector('.projects-button-slider-prev');
+        var nextButton = document.querySelector('.projects-button-slider-next');
+        prevButton.style.borderColor = 'white';
+        nextButton.style.borderColor = 'white';
+    }
+    }
+}
+
 });
 
 document.addEventListener('keydown', function(event) {
