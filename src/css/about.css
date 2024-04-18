@@ -26,7 +26,7 @@
 .about-me-text-wrapper {
     height: 500px;
     border-radius: 24px;
-    background: #242527;
+    background: var(--bgr-card-prj);
     padding-top: 32px;
     padding-left: 32px;
     padding-right: 32px;

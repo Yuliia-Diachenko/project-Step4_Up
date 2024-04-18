@@ -42,7 +42,12 @@ body {
 /* ------------- theme  ------------ */
 .light-theme {
   --background-color:#827e7e;
+  --text-grey-webs: rgb(18, 16, 16);
+  --text-grey-all: white;
+  --bgr-card-prj:#a19c9c;
+  --main-text: rgb(20, 19, 19);
   color-scheme: light;
+  --background: var(--coral-button)
 }
 
 .theme {
